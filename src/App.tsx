@@ -1,14 +1,29 @@
-import './App.css'
+import { BrowserRouter as Router, Routes, Route } from 'react-router-dom';
+import Navbar from './components/Navbar';
+import Home from './pages/Home';
+import About from './pages/About';
+import Features from './pages/Features';
+import Contact from './pages/Contact';
+import Login from './pages/Login';
+import Signup from './pages/Signup';
+import './App.css';
 
 function App() {
-  
-
   return (
-    <>
-<h1 className='text-red-900 text-[50px] mt-40'>hi</h1>
-
-    </>
-  )
+    <Router>
+      <div className="min-h-screen">
+        <Navbar />
+        <Routes>
+          <Route path="/" element={<Home />} />
+          <Route path="/about" element={<About />} />
+          <Route path="/features" element={<Features />} />
+          <Route path="/contact" element={<Contact />} />
+          <Route path="/login" element={<Login />} />
+          <Route path="/signup" element={<Signup />} />
+        </Routes>
+      </div>
+    </Router>
+  );
 }
 
-export default App
+export default App;
