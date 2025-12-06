@@ -1,6 +1,4 @@
 export default function About() {
-  return (
-<<<<<<< HEAD
     <div className="min-h-screen bg-gray-50 py-16">
       <div className="container mx-auto px-4 max-w-4xl">
         <h1 className="text-4xl font-bold text-gray-800 mb-8">About Us</h1>
@@ -44,9 +42,7 @@ export default function About() {
             to grow their practice.
           </p>
         </div>
-      </div>
-=======
-    <div className="relative min-h-screen bg-gradient-to-br from-slate-50 via-sky-50 to-indigo-100 overflow-hidden">
+         <div className="relative min-h-screen bg-gradient-to-br from-slate-50 via-sky-50 to-indigo-100 overflow-hidden">
       {/* Background grid + blobs */}
       <div className="pointer-events-none absolute inset-0 -z-10">
         <div className="absolute inset-0 bg-[radial-gradient(circle_at_top,_#dbeafe66_0,_transparent_55%),radial-gradient(circle_at_bottom,_#e0e7ff66_0,_transparent_55%)]" />
@@ -226,7 +222,7 @@ export default function About() {
           </div>
         </section>
       </main>
->>>>>>> dev
+      
     </div>
   );
 }
